@@ -18,7 +18,7 @@ function esTipoDato(valor) {
   } else if (typeof valor === "function") {
     return "function"; 
   } else {
-    return "no se que pusiste wey";
+    return "Yo no se que se supone pusiste";
   }
 }
 
