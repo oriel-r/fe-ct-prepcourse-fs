@@ -9,7 +9,7 @@ function esFechaValida(fecha) {
     return true;
   } else {
     return false;
-  }n
+  }
 }
 
 module.exports = esFechaValida; 

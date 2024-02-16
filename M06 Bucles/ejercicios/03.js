@@ -3,6 +3,8 @@ function obtenerMayor(x, y) {
   // Retorna el número más grande.
   // Si son iguales, retornar cualquiera de los dos.
   // Tu código:
+ var mayor = Math.max(x, y);
+return mayor;
 }
 
 module.exports = obtenerMayor;
