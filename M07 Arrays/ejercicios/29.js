@@ -3,7 +3,18 @@ function encontrarNumeroFaltante(numeros) {
   // Encuentra el número faltante en una secuencia de números enteros consecutivos
   // y retórnalo.
   // Devuelve null si el aray es vacío o si no hay números faltantes.
-  // Tu código:
-}
+  // Tu código
+  if (numeros.length === 0) {
+    return null;
+  }
+  var min = Math.min(...numeros);
+  var max = Math.max(...numeros);
 
+  for (var i = min; i < max; i++) {
+    if (!numeros.includes(i)) {
+      return i;
+    }
+  }
+  return null;
+}
 module.exports = encontrarNumeroFaltante;
