@@ -17,9 +17,4 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
   return objetoProducto.calcularPrecioDescuento(); // Retorna el precio final
 }
 
-var itemramdon = {
-  precio: 120,
-  porcentajeDeDescuento: 0.40,
-};
-console.log(agregarMetodoCalculoDescuento(itemramdon));
 module.exports = agregarMetodoCalculoDescuento;
