@@ -15,6 +15,7 @@ function esPalindromo(string) {
   if (strInvertido == strSinEspacios) {
     return true;
   } else return false;
+  return strInvertido;
 }
-
+console.log(esPalindromo("i love you so much"));
 module.exports = esPalindromo;

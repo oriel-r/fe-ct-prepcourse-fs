@@ -14,7 +14,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
     var precioFinal = this.precio - valorDescuento;
     return precioFinal;
   };
-  return objetoProducto;
+  return objetoProducto; // Retorna el precio final
 }
 
 module.exports = agregarMetodoCalculoDescuento;
