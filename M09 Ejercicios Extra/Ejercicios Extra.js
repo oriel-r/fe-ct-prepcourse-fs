@@ -36,8 +36,7 @@ function capToFront(string) {
   // [EJEMPLO]: soyHENRY ---> HENRYsoy
   // Tu código:
   var letrasMay = "";
-  var letrasMin =  "";
-   
+  var letrasMin =  "";  
   for (i = 0; i < string.length; i ++) {
     if (string[i] === string[i].toUpperCase()){
       letrasMay += string[i];
@@ -77,6 +76,9 @@ function deleteAbc(string) {
   // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
   // Retorna el string sin estas letras.
   // Tu código:
+  var arrayStr = string.split("");
+  var arraySinAbc = arrayStr.filter(letra => letra !== "A" && letra !== "B" && letra !== "C" && letra !== "a" && letra !== "b" && letra !== "c");
+  return arraySinAbc.join("");
 }
 
 function sortArray(arrayOfStrings) {
@@ -85,7 +87,9 @@ function sortArray(arrayOfStrings) {
   // de la longitud de cada string.
   // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
   // Tu código:
+  return arrayOfStrings.sort((a, b) => a.length - b.length);
 }
+
 
 function buscoInterseccion(array1, array2) {
   // Recibes dos arreglos de números.
@@ -94,6 +98,13 @@ function buscoInterseccion(array1, array2) {
   // Si no tienen elementos en común, retornar un arreglo vacío.
   // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
   // Tu código:
+  var interseccion = [];
+  array1.forEach(function(elemento) {
+    if (array2.includes(elemento) && !interseccion.includes(elemento)) {
+      interseccion.push(elemento);
+    }
+  });
+  return interseccion;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
